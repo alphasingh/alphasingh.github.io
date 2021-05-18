@@ -1,0 +1,50 @@
+<html lang="en">
+<head>
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+    <title>3D OSS Model viewer</title>
+</head>
+<body>
+<!--<h1>List of objects near you</h1>-->
+<!--<ul>-->
+<!--    <li>Medium_Sofa-->
+<!--        <iframe width="200" height="100" style="border:1px solid #eeeeee;"-->
+<!--                src="https://3dviewer.net/embed.html#model=https://alphasingh.github.io/assets/obj/couch.obj$camera=-2.2129,3.1699,3.1143,0.026935,0.18347,-1.3653,0.0000,1.0000,0.0000"></iframe>-->
+<!--    </li>-->
+<!--    <li>Heavy_Chair-->
+<!--        <iframe width="200" height="100" style="border:1px solid #eeeeee;"-->
+<!--                src="https://3dviewer.net/embed.html#model=https://alphasingh.github.io/assets/obj/chair.obj"></iframe>-->
+<!--    </li>-->
+<!--    <li>Light_Chair-->
+<!--        <iframe width="200" height="100" style="border:1px solid #eeeeee;"-->
+<!--                src="https://3dviewer.net/embed.html#model=https://alphasingh.github.io/assets/obj/chair_lite.obj"></iframe>-->
+<!--    </li>-->
+<!--</ul>-->
+<!--<model-viewer-->
+<!--        data-name="baloon"-->
+<!--        src="./models/baloon/baloon.glb"-->
+<!--        ios-src="./models/baloon/baloon.usdz"-->
+<!--        ar-->
+<!--        ar-modes="scene-viewer quick-look"-->
+<!--        camera-controls-->
+<!--        auto-rotate-->
+<!--        poster="./images/baloon.png"-->
+<!--&gt;-->
+<!--<img src="assets/gladiator.glb" alt="Girl in a jacket" width="500" height="600">-->
+<model-viewer src="Astronaut.glb" camera-controls shadow-intensity="1">
+
+    <div class="progress-bar hide" slot="progress-bar">
+        <div class="update-bar"></div>
+    </div>
+    <button slot="ar-button" id="ar-button">
+        View in your space
+    </button>
+    <div id="ar-prompt">
+        <img src="https://modelviewer.dev/shared-assets/icons/hand.png">
+    </div>
+</model-viewer>
+<!--<model-viewer src="../../shared-assets/models/Astronaut.glb" ar ar-scale="fixed" camera-controls-->
+<!--              alt="A 3D model of an astronaut"-->
+<!--              skybox-image="../../shared-assets/environments/aircraft_workshop_01_1k.hdr"-->
+<!--              ios-src="../../shared-assets/models/Astronaut.usdz"></model-viewer>-->
+</body>
+</html>
