@@ -1,0 +1,25 @@
+<html lang="en">
+<head>
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+    <title>3D OSS Model viewer</title>
+</head>
+<body>
+
+<!-- Refer official docs: https://modelviewer.dev/ and https://jsantell.com/model-viewer/ -->
+<model-viewer src="Astronaut.glb" camera-controls shadow-intensity="1" ios-src="Astronaut.usdz" ar
+              ar-modes="scene-viewer webxr quick-look">
+
+    <div class="progress-bar hide" slot="progress-bar">
+        <div class="update-bar"></div>
+    </div>
+    <button slot="ar-button" id="ar-button">
+        View in your space
+    </button>
+    <div id="ar-prompt">
+        <img src="https://modelviewer.dev/shared-assets/icons/hand.png">
+    </div>
+</model-viewer>
+<!-- Reads: https://medium.com/chialab-open-source/augmented-reality-on-the-web-with-model-viewer-d59a5ccd77a -->
+
+</body>
+</html>
