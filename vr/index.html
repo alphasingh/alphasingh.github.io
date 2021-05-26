@@ -1,6 +1,7 @@
 <html lang="en">
 <head>
     <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
     <title>3D OSS Model viewer</title>
 </head>
 <body>
@@ -17,6 +18,26 @@
     <li>Light_Chair
         <iframe width="200" height="100" style="border:1px solid #eeeeee;"
                 src="https://3dviewer.net/embed.html#model=https://alphasingh.github.io/assets/obj/chair_lite.obj"></iframe>
+    </li>
+    <li>
+        <div>
+            <model-viewer src="https://alphasingh.github.io/model/Astronaut.glb"
+                          camera-controls shadow-intensity="1"
+                          ios-src="https://alphasingh.github.io/model/Astronaut.usdz" ar
+                          ar-modes="scene-viewer webxr quick-look">
+            </model-viewer>
+        </div>
+        Astronaut
+    </li>
+    <li>
+        <div>
+            <model-viewer src="https://alphasingh.github.io/model/omelette.glb"
+                          camera-controls shadow-intensity="1"
+                          ios-src="https://alphasingh.github.io/model/omelette.usdz" ar
+                          ar-modes="scene-viewer webxr quick-look">
+            </model-viewer>
+        </div>
+        Omelette
     </li>
 </ul>
 </body>
